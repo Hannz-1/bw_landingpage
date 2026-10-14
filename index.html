@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Your free session has been booked | Base Wellness</title>
+</head>
+<body style="margin:0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+/* OPTIONAL (Elementor): only if the page isn't edge-to-edge after following the setup steps, remove the comment markers around the next rule.
+.bwlp{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw)}
+*/
+.bwlp{--bw-black:#000000;--bw-ink:#0d0d0d;--bw-white:#ffffff;--bw-grey:#f4f4f2;--bw-line:#e4e4e0;--bw-text:#333333;--bw-orange:#FA4616;--bw-orange-dark:#d93a0e;--bw-green:#1fb45a;--bw-radius:24px;font-family:"Shippori Antique",sans-serif;color:var(--bw-text);line-height:1.65;overflow:hidden;-webkit-font-smoothing:antialiased}
+.bwlp *{box-sizing:border-box}
+.bwlp h1,.bwlp h2,.bwlp h3,.bwlp p,.bwlp li,.bwlp a,.bwlp span,.bwlp strong,.bwlp em,.bwlp section h1,.bwlp section h2,.bwlp section h3,.bwlp section p{font-family:"Shippori Antique",sans-serif!important}
+.bwlp section{padding:110px 20px;position:relative}
+.bwlp .bw-wrap{max-width:1100px;margin:0 auto;position:relative}
+.bwlp section h1,.bwlp section h2,.bwlp section h3{color:var(--bw-black);line-height:1.12;margin:0 0 18px;padding:0;font-weight:400!important;font-style:normal;text-transform:none;letter-spacing:-.01em;text-shadow:none}
+.bwlp section h1{font-size:clamp(40px,6.5vw,78px)}
+.bwlp section h2{font-size:clamp(30px,4.4vw,52px)}
+.bwlp section h3{font-size:22px;letter-spacing:0}
+.bwlp section p{margin:0 0 16px;font-weight:400;font-style:normal;text-transform:none}
+.bwlp em{font-style:normal;color:inherit;background:linear-gradient(transparent 84%,var(--bw-orange) 84%,var(--bw-orange) 93%,transparent 93%)}
+.bwlp .bw-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px;color:#111}
+.bwlp .bw-about .bw-eyebrow,.bwlp .bw-parq-box .bw-eyebrow{color:#bdbdbd}
+.bwlp .bw-eyebrow:before{content:"";width:28px;height:2px;background:var(--bw-orange)}
+.bwlp .bw-center .bw-eyebrow:after{content:"";width:28px;height:2px;background:var(--bw-orange)}
+.bwlp .bw-lead{font-size:clamp(17px,2vw,21px);max-width:660px}
+.bwlp .bw-center{text-align:center}
+.bwlp .bw-center .bw-lead{margin-left:auto;margin-right:auto}
+
+/* Buttons */
+.bwlp .bw-btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:999px;background:var(--bw-orange);color:var(--bw-white)!important;font-size:16px;letter-spacing:.5px;text-decoration:none!important;border:2px solid var(--bw-orange);transition:transform .25s,background .25s,border-color .25s,box-shadow .25s;cursor:pointer}
+.bwlp .bw-btn:after{content:"\2192";transition:transform .25s}
+.bwlp .bw-btn:hover{transform:translateY(-3px);background:var(--bw-orange-dark);border-color:var(--bw-orange-dark);box-shadow:0 12px 28px rgba(250,70,22,.35)}
+.bwlp .bw-btn:hover:after{transform:translateX(4px)}
+.bwlp .bw-btn:focus-visible,.bwlp a:focus-visible{outline:3px solid var(--bw-orange);outline-offset:3px}
+.bwlp .bw-btn-outline{background:transparent;color:var(--bw-black)!important;border-color:var(--bw-black);margin-left:10px}
+.bwlp .bw-btn-outline:hover{background:var(--bw-black);border-color:var(--bw-black);box-shadow:none}
+.bwlp .bw-btn-light{background:var(--bw-orange);border-color:var(--bw-orange);color:var(--bw-white)!important}
+
+/* Animation */
+@keyframes bw-up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes bw-pulse{0%{box-shadow:0 0 0 0 rgba(31,180,90,.55)}100%{box-shadow:0 0 0 26px rgba(31,180,90,0)}}
+@keyframes bw-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.bwlp .bw-hero .bw-wrap>*{animation:bw-up .8s cubic-bezier(.2,.7,.2,1) both}
+.bwlp .bw-hero .bw-wrap>*:nth-child(2){animation-delay:.1s}
+.bwlp .bw-hero .bw-wrap>*:nth-child(3){animation-delay:.2s}
+.bwlp .bw-hero .bw-wrap>*:nth-child(4){animation-delay:.3s}
+
+/* 1. Hero / confirmation */
+.bwlp .bw-hero{background:var(--bw-black);color:#d9d9d9;padding:104px 20px 92px;background-image:radial-gradient(ellipse 55% 45% at 50% -8%,rgba(250,70,22,.2),transparent 70%),radial-gradient(ellipse 50% 40% at 50% 0%,rgba(255,255,255,.07),transparent 70%)}
+.bwlp .bw-hero .bw-wrap{z-index:1}
+.bwlp .bw-hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(transparent,#000);pointer-events:none}
+.bwlp .bw-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at center,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at center,#000 20%,transparent 75%)}
+.bwlp .bw-hero .bw-check{width:72px;height:72px;border-radius:50%;background:var(--bw-green);display:flex;align-items:center;justify-content:center;margin:0 auto 30px;animation:bw-up .8s cubic-bezier(.2,.7,.2,1) both,bw-pulse 2.4s ease-out 1s infinite}
+.bwlp .bw-check svg{width:32px;height:32px}
+.bwlp .bw-hero h1{color:var(--bw-white);font-size:clamp(40px,6.6vw,84px);line-height:1.04;letter-spacing:-.03em;margin:0 auto 24px;max-width:900px}
+.bwlp .bw-hero h1 em{background:none;color:var(--bw-orange)}
+.bwlp .bw-hero .bw-lead{color:#b9b9b9;max-width:580px;font-size:clamp(16px,1.8vw,19px);line-height:1.6;margin-bottom:0}
+.bwlp .bw-hero .bw-actions{margin-top:38px}
+.bwlp .bw-hero .bw-btn-outline{color:var(--bw-white)!important;border-color:rgba(255,255,255,.55)}
+.bwlp .bw-hero .bw-btn-outline:hover{background:var(--bw-white);border-color:var(--bw-white);color:var(--bw-black)!important}
+.bwlp .bw-hero .bw-btn-outline:after{content:"\2193"}
+.bwlp .bw-hero .bw-btn-outline:hover:after{transform:translateY(3px)}
+
+/* Ticker */
+.bwlp .bw-marquee{background:var(--bw-white);color:var(--bw-black);overflow:hidden;white-space:nowrap;padding:20px 0;border-bottom:1px solid var(--bw-line)}
+.bwlp .bw-marquee div{display:inline-block;animation:bw-scroll 36s linear infinite}
+.bwlp .bw-marquee span{font-size:clamp(18px,2.4vw,26px);padding:0 26px}
+.bwlp .bw-marquee span:after{content:"\2726";margin-left:52px;color:var(--bw-orange);font-size:.7em;vertical-align:middle}
+
+/* 2. Preparation intro */
+.bwlp .bw-intro{padding:84px 20px 90px}
+.bwlp .bw-callout{display:inline-flex;align-items:center;gap:16px;margin-top:34px;padding:20px 32px 20px 20px;background:var(--bw-black);color:#fff;border-radius:22px;font-size:clamp(17px,2vw,21px);line-height:1.4;text-align:left;box-shadow:0 18px 40px rgba(0,0,0,.16)}
+.bwlp .bw-callout svg{flex:0 0 42px;width:42px;height:42px;padding:11px;border-radius:50%;background:var(--bw-orange)}
+
+/* Grids and cards */
+.bwlp .bw-grey{background:var(--bw-grey)}
+.bwlp .bw-grid{display:grid;gap:24px;margin-top:56px}
+.bwlp .bw-grid>*{min-width:0}
+.bwlp .bw-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.bwlp .bw-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.bwlp .bw-grid-5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.bwlp .bw-card{background:var(--bw-white);border-radius:var(--bw-radius);padding:34px 30px 36px;position:relative;overflow:hidden;border:1px solid var(--bw-line);text-align:left;transition:transform .35s,background .35s,border-color .35s,box-shadow .35s}
+.bwlp .bw-card:hover{transform:translateY(-6px);background:var(--bw-black);border-color:var(--bw-black);box-shadow:0 24px 48px rgba(0,0,0,.18)}
+.bwlp .bw-card .bw-num{position:absolute;top:6px;right:22px;font-size:96px;line-height:1;color:var(--bw-black);opacity:.06;pointer-events:none;transition:opacity .35s,color .35s}
+.bwlp .bw-card:hover .bw-num{color:#fff;opacity:.14}
+.bwlp .bw-card h3{position:relative;margin-top:58px;margin-bottom:12px;transition:color .35s}
+.bwlp .bw-card p{margin:0;font-size:16px;position:relative;transition:color .35s}
+.bwlp .bw-card:hover h3{color:#fff}
+.bwlp .bw-card:hover p{color:#bdbdbd}
+.bwlp .bw-card:before{content:"";display:block;width:36px;height:4px;border-radius:4px;background:var(--bw-orange);position:absolute;top:34px;left:30px}
+.bwlp .bw-card ul{list-style:none;margin:0;padding:0;position:relative}
+.bwlp .bw-card li{position:relative;padding-left:22px;margin-bottom:10px;font-size:16px;transition:color .35s}
+.bwlp .bw-card li:last-child{margin-bottom:0}
+.bwlp .bw-card li:before{content:"";position:absolute;left:0;top:11px;width:7px;height:7px;border-radius:50%;background:var(--bw-orange)}
+.bwlp .bw-card:hover li{color:#bdbdbd}
+
+/* 3. Meet Base Wellness */
+.bwlp .bw-about{background:var(--bw-ink);color:#cfcfcf;background-image:radial-gradient(ellipse 50% 60% at 0% 100%,rgba(255,255,255,.07),transparent 70%)}
+.bwlp .bw-about h2,.bwlp .bw-about h3{color:var(--bw-white)}
+.bwlp .bw-split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.bwlp .bw-benefits{counter-reset:bw}
+.bwlp .bw-benefit{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:22px 26px 22px 76px;margin-bottom:12px;position:relative;counter-increment:bw;transition:background .3s,border-color .3s,transform .3s}
+.bwlp .bw-benefit:before{content:"0" counter(bw);position:absolute;left:26px;top:22px;font-size:22px;color:#777;transition:color .3s}
+.bwlp .bw-benefit:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.28);transform:translateX(6px)}
+.bwlp .bw-benefit:hover:before{color:var(--bw-orange)}
+.bwlp .bw-benefit h3{margin-bottom:6px}
+.bwlp .bw-benefit p{margin:0;font-size:16px}
+
+/* 6. Prepare video */
+.bwlp .bw-embed{position:relative;aspect-ratio:16/9;max-width:920px;margin:44px auto 0;border-radius:28px;overflow:hidden;background:#000;box-shadow:0 24px 60px rgba(0,0,0,.2)}
+.bwlp .bw-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.bwlp section h3.bw-subhead{font-size:clamp(24px,3vw,34px);margin:72px 0 0}
+
+/* 5 + 7. Client videos */
+.bwlp .bw-video{position:relative;overflow:hidden;background:#161616;aspect-ratio:9/16;width:100%;min-width:0;border-radius:26px;box-shadow:0 14px 34px rgba(0,0,0,.14);transition:box-shadow .35s}
+.bwlp .bw-video video{position:absolute;inset:0;width:100%;height:100%;max-width:100%;object-fit:cover;display:block}
+.bwlp .bw-caption{min-width:0;overflow-wrap:anywhere}
+
+.bwlp .bw-testi .bw-grid{align-items:start;gap:22px}
+.bwlp .bw-testi .bw-grid-5{gap:20px}
+.bwlp .bw-testi .bw-grid>div{text-align:left;transition:transform .35s}
+.bwlp .bw-testi .bw-grid-3 .bw-video{aspect-ratio:4/5}
+.bwlp .bw-testi .bw-grid>div:hover{transform:translateY(-6px)}
+.bwlp .bw-testi .bw-grid>div:hover .bw-video{box-shadow:0 28px 56px rgba(0,0,0,.24)}
+.bwlp .bw-caption{padding:18px 4px 0}
+.bwlp .bw-caption strong{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:400;color:var(--bw-black);line-height:1.3}
+.bwlp .bw-caption strong:before{content:"";flex:0 0 18px;height:2px;background:var(--bw-orange)}
+
+/* 8. PAR-Q */
+.bwlp .bw-parq{background:var(--bw-grey);padding-top:70px;padding-bottom:70px}
+.bwlp .bw-parq-box{background:var(--bw-black);color:#d9d9d9;border-radius:36px;border:1px solid rgba(255,255,255,.12);padding:60px 30px 56px;text-align:center;position:relative;overflow:hidden;background-image:radial-gradient(ellipse 60% 70% at 50% 0%,rgba(255,255,255,.09),transparent 70%)}
+.bwlp .bw-parq-box .bw-eyebrow{margin-bottom:22px}
+.bwlp .bw-parq-box h2{color:#fff;max-width:760px;margin:0 auto 20px;line-height:1.08}
+.bwlp .bw-parq-box .bw-lead{margin:0 auto 32px;max-width:620px;line-height:1.55}
+.bwlp .bw-parq-box .bw-btn-light:hover{background:#fff;border-color:#fff;color:var(--bw-black)!important;box-shadow:0 12px 28px rgba(255,255,255,.15)}
+
+@media (min-width:901px) and (max-width:1100px){
+  .bwlp .bw-testi .bw-grid-5{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .bwlp .bw-testi .bw-grid-5>div{grid-column:span 2}
+  .bwlp .bw-testi .bw-grid-5>div:nth-child(4){grid-column:2/4}
+  .bwlp .bw-testi .bw-grid-5>div:nth-child(5){grid-column:4/6}
+}
+@media (max-width:900px){
+  .bwlp .bw-grid-2,.bwlp .bw-grid-3,.bwlp .bw-split{grid-template-columns:1fr}
+  .bwlp .bw-split{gap:28px}
+  .bwlp section{padding:48px 18px}
+  .bwlp .bw-intro{padding:44px 18px 48px}
+  .bwlp .bw-hero{padding:56px 18px 48px}
+  .bwlp .bw-grid{gap:14px;margin-top:32px}
+  .bwlp .bw-card{padding:26px 22px 28px}
+  .bwlp .bw-card:before{top:26px;left:22px}
+  .bwlp .bw-card h3{margin-top:40px}
+  .bwlp .bw-benefit{padding:16px 20px 16px 62px;margin-bottom:10px}
+  .bwlp .bw-benefit:before{left:20px;top:16px}
+  .bwlp .bw-marquee{padding:14px 0}
+  .bwlp .bw-callout{margin-top:24px;padding:16px 20px 16px 16px;gap:14px;border-radius:18px}
+  .bwlp .bw-embed{margin-top:28px;border-radius:18px}
+  .bwlp section h3.bw-subhead{margin-top:44px}
+  .bwlp .bw-testi .bw-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:28px -18px 0;padding:6px 18px 14px;scrollbar-width:none}
+  .bwlp .bw-testi .bw-grid::-webkit-scrollbar{display:none}
+  .bwlp .bw-testi .bw-grid>div{flex:0 0 74%;max-width:300px;scroll-snap-align:center;padding:0}
+  .bwlp .bw-testi .bw-grid>div:hover{transform:none}
+  .bwlp .bw-testi .bw-video,.bwlp .bw-testi .bw-grid-3 .bw-video{aspect-ratio:4/5}
+  .bwlp .bw-caption{padding:14px 2px 0}
+}
+@media (max-width:520px){
+  .bwlp .bw-btn{display:flex;justify-content:center}
+  .bwlp .bw-btn-outline{margin:12px 0 0}
+  .bwlp section h1{margin-bottom:16px}
+  .bwlp section h2{margin-bottom:12px}
+  .bwlp .bw-eyebrow{margin-bottom:12px}
+  .bwlp .bw-hero .bw-check{width:60px;height:60px;margin-bottom:22px}
+  .bwlp .bw-check svg{width:26px;height:26px}
+  .bwlp .bw-hero h1{margin-bottom:16px}
+  .bwlp .bw-hero .bw-actions{margin-top:26px}
+  .bwlp .bw-parq{padding-top:36px;padding-bottom:36px}
+  .bwlp .bw-parq-box{padding:36px 18px 32px;border-radius:24px}
+  .bwlp .bw-parq-box h2{margin-bottom:12px}
+  .bwlp .bw-parq-box .bw-lead{margin-bottom:22px}
+}
+@media (prefers-reduced-motion:reduce){
+  .bwlp *,.bwlp *:before,.bwlp *:after{animation:none!important;transition:none!important}
+}
+</style>
+
+<div class="bwlp">
+
+  <!-- 1. CONFIRMATION -->
+  <section class="bw-hero bw-center">
+    <div class="bw-wrap">
+      <div class="bw-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h1>Your free session<br>has been <em>booked.</em></h1>
+      <p class="bw-lead">Check your email for your confirmation details.</p>
+      <div class="bw-actions">
+        <a href="#bw-parq" class="bw-btn bw-btn-light">Complete PAR-Q now</a>
+        <a href="#bw-prepare" class="bw-btn bw-btn-outline">Prepare for your session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticker -->
+  <div class="bw-marquee" aria-hidden="true">
+    <div>
+      <span>Over 1,000 people supported</span><span>Expert personal trainers</span><span>Over 10 years of experience</span><span>Your free session</span>
+      <span>Over 1,000 people supported</span><span>Expert personal trainers</span><span>Over 10 years of experience</span><span>Your free session</span>
+    </div>
+  </div>
+
+  <!-- 2. PREPARATION -->
+  <section class="bw-intro bw-center">
+    <div class="bw-wrap">
+      <span class="bw-eyebrow">Before your session</span>
+      <p class="bw-lead" style="margin-bottom:0">To get the most out of your free session, there are a few small steps to take.</p>
+      <div class="bw-callout">
+        <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><polygon points="12 2 15.1 8.6 22 9.3 16.8 14 18.2 21 12 17.4 5.8 21 7.2 14 2 9.3 8.9 8.6"></polygon></svg>
+        <span>People who follow these steps get the most out of their session.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MEET THE ORGANISATION -->
+  <section class="bw-about">
+    <div class="bw-wrap bw-split">
+      <div>
+        <span class="bw-eyebrow">Who we are</span>
+        <h2>Meet <em>Base Wellness</em></h2>
+        <p>We are a community dedicated to helping people feel confident and safe in the gym while achieving their fitness goals.</p>
+        <p>Our objective is to understand you, cut through the noise and give you clarity on exactly how to achieve your goals.</p>
+      </div>
+      <div class="bw-benefits">
+        <div class="bw-benefit">
+          <h3>Over 1,000 people supported</h3>
+          <p>We've helped over a thousand people achieve their fitness goals and build confidence in the gym.</p>
+        </div>
+        <div class="bw-benefit">
+          <h3>Expert personal trainers</h3>
+          <p>Our trainers are trained to the highest standards, with the knowledge and expertise to understand your individual needs and help you overcome the challenges holding you back.</p>
+        </div>
+        <div class="bw-benefit">
+          <h3>Over 10 years of experience</h3>
+          <p>With over a decade in the industry, we specialise in strength training, personalised programmes and nutrition to help you build a stronger, fitter, more toned body and feel your best.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WHAT TO EXPECT -->
+  <section class="bw-grey" id="bw-expect">
+    <div class="bw-wrap bw-center">
+      <span class="bw-eyebrow">Your free session</span>
+      <h2>What to <em>Expect</em></h2>
+      <div class="bw-grid bw-grid-2">
+        <div class="bw-card">
+          <div class="bw-num">1</div>
+          <h3>Step 1: Understand where you are now</h3>
+          <p>We'll assess your current position, review your existing programme and identify the barriers that may be holding you back, whether that's time, knowledge, structure, motivation or consistency.</p>
+        </div>
+        <div class="bw-card">
+          <div class="bw-num">2</div>
+          <h3>Step 2: Build your session and a 30-day plan</h3>
+          <p>We'll create a session based on your needs and a practical 30-day plan to move you in the right direction.</p>
+        </div>
+        <div class="bw-card">
+          <div class="bw-num">3</div>
+          <h3>Step 3: Review your PAR-Q</h3>
+          <p>We'll review your PAR-Q before your session to help us understand your needs and prepare to deliver the best possible experience.</p>
+        </div>
+        <div class="bw-card">
+          <div class="bw-num">4</div>
+          <h3>Step 4: No pressure</h3>
+          <p>At the end of your session, we'll talk you through our services and explain how we can support you moving forward. There's no pressure to sign up. The session is about understanding your needs and helping you find the right approach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CLIENT REVIEWS -->
+  <section class="bw-testi">
+    <div class="bw-wrap bw-center">
+      <span class="bw-eyebrow">Client stories</span>
+      <h2>What Our Clients Say <em>About Us</em></h2>
+      <div class="bw-grid bw-grid-5">
+        <div>
+          <div class="bw-video"><video controls preload="metadata" playsinline><source src="REPLACE_VIDEO_1_URL.mp4" type="video/mp4"></video></div>
+          <div class="bw-caption"><strong>Jeffrey</strong></div>
+        </div>
+        <div>
+          <div class="bw-video"><video controls preload="metadata" playsinline><source src="REPLACE_VIDEO_2_URL.mp4" type="video/mp4"></video></div>
+          <div class="bw-caption"><strong>Andy</strong></div>
+        </div>
+        <div>
+          <div class="bw-video"><video controls preload="metadata" playsinline><source src="REPLACE_VIDEO_3_URL.mp4" type="video/mp4"></video></div>
+          <div class="bw-caption"><strong>Lisa</strong></div>
+        </div>
+        <div>
+          <div class="bw-video"><video controls preload="metadata" playsinline><source src="REPLACE_VIDEO_4_URL.mp4" type="video/mp4"></video></div>
+          <div class="bw-caption"><strong>Mariana</strong></div>
+        </div>
+        <div>
+          <div class="bw-video"><video controls preload="metadata" playsinline><source src="REPLACE_VIDEO_5_URL.mp4" type="video/mp4"></video></div>
+          <div class="bw-caption"><strong>REPLACE_NAME_5</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PREPARE FOR YOUR SESSION -->
+  <section class="bw-grey" id="bw-prepare">
+    <div class="bw-wrap bw-center">
+      <span class="bw-eyebrow">Get ready</span>
+      <h2>Watch This Video to <em>Prepare</em> for Your Session</h2>
+      <div class="bw-embed">
+        <iframe src="REPLACE_PREPARE_VIDEO_EMBED_URL" title="Prepare for your session" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      </div>
+
+      <h3 class="bw-subhead">Three Steps to Get Ready</h3>
+      <div class="bw-grid bw-grid-3">
+        <div class="bw-card">
+          <div class="bw-num">1</div>
+          <h3>Step 1: Eat, hydrate and prepare</h3>
+          <ul>
+            <li>Have something to eat before your session, but allow enough time for digestion.</li>
+            <li>Carbohydrates are preferable before exercise.</li>
+            <li>If you're short on time, choose an easily digested option such as fruit or cereal.</li>
+            <li>Stay hydrated and bring a bottle of water.</li>
+            <li>Feel free to have caffeine before your session if you wish.</li>
+          </ul>
+        </div>
+        <div class="bw-card">
+          <div class="bw-num">2</div>
+          <h3>Step 2: Send us your current programme</h3>
+          <p>Please send us your current training programme and let us know what you've tried previously. This will help us understand your starting point and prepare for your session.</p>
+        </div>
+        <div class="bw-card">
+          <div class="bw-num">3</div>
+          <h3>Step 3: Arrive early and warm up</h3>
+          <p>Please arrive a little early and spend five minutes warming up on a rowing machine, treadmill or cross trainer before your session begins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. MORE CLIENT SUCCESS STORIES -->
+  <section class="bw-testi">
+    <div class="bw-wrap bw-center">
+      <span class="bw-eyebrow">Success stories</span>
+      <h2>More Client <em>Success Stories</em></h2>
+      <div class="bw-grid bw-grid-3">
+        <div>
+          <div class="bw-video"><video controls preload="metadata" playsinline><source src="REPLACE_VIDEO_6_URL.mp4" type="video/mp4"></video></div>
+          <div class="bw-caption"><strong>REPLACE_CLIENT_NAME_6</strong></div>
+        </div>
+        <div>
+          <div class="bw-video"><video controls preload="metadata" playsinline><source src="REPLACE_VIDEO_7_URL.mp4" type="video/mp4"></video></div>
+          <div class="bw-caption"><strong>REPLACE_CLIENT_NAME_7</strong></div>
+        </div>
+        <div>
+          <div class="bw-video"><video controls preload="metadata" playsinline><source src="REPLACE_VIDEO_8_URL.mp4" type="video/mp4"></video></div>
+          <div class="bw-caption"><strong>REPLACE_CLIENT_NAME_8</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. COMPLETE YOUR PAR-Q -->
+  <section class="bw-parq" id="bw-parq">
+    <div class="bw-wrap">
+      <div class="bw-parq-box">
+        <span class="bw-eyebrow">One last step</span>
+        <h2>Complete Your PAR-Q</h2>
+        <p class="bw-lead">Please complete your PAR-Q before your session so we can understand your needs and prepare accordingly.</p>
+        <a href="REPLACE_PARQ_LINK" target="_blank" rel="noopener" class="bw-btn bw-btn-light">COMPLETE PAR-Q NOW</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+</body>
+</html>
