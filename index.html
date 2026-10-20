@@ -150,6 +150,18 @@
 .bwlp .bw-video{position:relative;overflow:hidden;background:#161616;aspect-ratio:9/16;width:100%;min-width:0;border-radius:26px;box-shadow:0 14px 34px rgba(0,0,0,.14);transition:box-shadow .35s}
 .bwlp .bw-video video{position:absolute;inset:0;width:100%;height:100%;max-width:100%;object-fit:cover;display:block}
 .bwlp .bw-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+/* Video thumbnails with custom play button (script at the bottom swaps in the YouTube player on click) */
+.bwlp a.bw-yt{display:block;cursor:pointer;text-decoration:none!important}
+.bwlp .bw-yt img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;display:block;filter:brightness(.9);transition:transform .6s,filter .3s}
+.bwlp .bw-yt:hover img{transform:scale(1.04);filter:brightness(1)}
+.bwlp .bw-yt:before{content:"";position:absolute;left:50%;top:50%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:rgba(255,255,255,.94);box-shadow:0 10px 28px rgba(0,0,0,.4);transition:transform .3s,background .3s;z-index:1}
+.bwlp .bw-yt:after{content:"";position:absolute;left:50%;top:50%;margin:-10px 0 0 -6px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #000;transition:border-color .3s;z-index:2}
+.bwlp .bw-yt:hover:before{transform:scale(1.1);background:var(--bw-orange)}
+.bwlp .bw-yt:hover:after{border-left-color:#fff}
+.bwlp .bw-embed.bw-yt:before{width:88px;height:88px;margin:-44px 0 0 -44px}
+.bwlp .bw-embed.bw-yt:after{margin:-13px 0 0 -8px;border-width:13px 0 13px 22px}
+.bwlp .bw-yt.is-playing:before,.bwlp .bw-yt.is-playing:after{display:none}
+.bwlp .bw-yt:focus-visible{outline:3px solid var(--bw-orange);outline-offset:3px}
 .bwlp .bw-caption{min-width:0;overflow-wrap:anywhere}
 
 .bwlp .bw-testi .bw-grid{align-items:start;gap:22px}
@@ -321,23 +333,23 @@
       <h2>What Our Clients Say <em>About Us</em></h2>
       <div class="bw-grid bw-grid-5">
         <div>
-          <div class="bw-video"><iframe src="https://www.youtube-nocookie.com/embed/Y_w8tSB7dg4?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Geoffe - client review" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          <a class="bw-video bw-yt" href="https://www.youtube.com/shorts/Y_w8tSB7dg4" target="_blank" rel="noopener" data-yt="Y_w8tSB7dg4" data-title="Geoffe - client review" aria-label="Play Geoffe's review"><img src="https://i.ytimg.com/vi/Y_w8tSB7dg4/maxresdefault.jpg" alt="Geoffe - client review" loading="lazy"></a>
           <div class="bw-caption"><strong>Geoffe</strong></div>
         </div>
         <div>
-          <div class="bw-video"><iframe src="https://www.youtube-nocookie.com/embed/YipaIn5Fvrc?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Andy - client review" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          <a class="bw-video bw-yt" href="https://www.youtube.com/shorts/YipaIn5Fvrc" target="_blank" rel="noopener" data-yt="YipaIn5Fvrc" data-title="Andy - client review" aria-label="Play Andy's review"><img src="https://i.ytimg.com/vi/YipaIn5Fvrc/maxresdefault.jpg" alt="Andy - client review" loading="lazy"></a>
           <div class="bw-caption"><strong>Andy</strong></div>
         </div>
         <div>
-          <div class="bw-video"><iframe src="https://www.youtube-nocookie.com/embed/E8MffMLtiIk?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Lisa - client review" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          <a class="bw-video bw-yt" href="https://www.youtube.com/shorts/E8MffMLtiIk" target="_blank" rel="noopener" data-yt="E8MffMLtiIk" data-title="Lisa - client review" aria-label="Play Lisa's review"><img src="https://i.ytimg.com/vi/E8MffMLtiIk/maxresdefault.jpg" alt="Lisa - client review" loading="lazy"></a>
           <div class="bw-caption"><strong>Lisa</strong></div>
         </div>
         <div>
-          <div class="bw-video"><iframe src="https://www.youtube-nocookie.com/embed/7k_E0GaZzKA?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Marianna - client review" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          <a class="bw-video bw-yt" href="https://www.youtube.com/shorts/7k_E0GaZzKA" target="_blank" rel="noopener" data-yt="7k_E0GaZzKA" data-title="Marianna - client review" aria-label="Play Marianna's review"><img src="https://i.ytimg.com/vi/7k_E0GaZzKA/maxresdefault.jpg" alt="Marianna - client review" loading="lazy"></a>
           <div class="bw-caption"><strong>Marianna</strong></div>
         </div>
         <div>
-          <div class="bw-video"><iframe src="https://www.youtube-nocookie.com/embed/Hw6vvtDGdQk?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Fizz - client review" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          <a class="bw-video bw-yt" href="https://www.youtube.com/shorts/Hw6vvtDGdQk" target="_blank" rel="noopener" data-yt="Hw6vvtDGdQk" data-title="Fizz - client review" aria-label="Play Fizz's review"><img src="https://i.ytimg.com/vi/Hw6vvtDGdQk/maxresdefault.jpg" alt="Fizz - client review" loading="lazy"></a>
           <div class="bw-caption"><strong>Fizz</strong></div>
         </div>
       </div>
@@ -349,9 +361,7 @@
     <div class="bw-wrap bw-center">
       <span class="bw-eyebrow">Get ready</span>
       <h2>Watch This Video to <em>Prepare</em> for Your Session</h2>
-      <div class="bw-embed">
-        <iframe src="https://www.youtube-nocookie.com/embed/9-wPFscqcRA?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Prepare for your session" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
-      </div>
+      <a class="bw-embed bw-yt" href="https://youtu.be/9-wPFscqcRA" target="_blank" rel="noopener" data-yt="9-wPFscqcRA" data-title="Prepare for your session" aria-label="Play the preparation video"><img src="https://i.ytimg.com/vi/9-wPFscqcRA/maxresdefault.jpg" alt="Prepare for your session" loading="lazy"></a>
 
       <h3 class="bw-subhead">Three Steps to Get Ready</h3>
       <div class="bw-grid bw-grid-3">
@@ -387,15 +397,15 @@
       <h2>More Client <em>Success Stories</em></h2>
       <div class="bw-grid bw-grid-3">
         <div>
-          <div class="bw-video"><iframe src="https://www.youtube-nocookie.com/embed/2OeaMsjUkRk?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Rolande - client review" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          <a class="bw-video bw-yt" href="https://www.youtube.com/shorts/2OeaMsjUkRk" target="_blank" rel="noopener" data-yt="2OeaMsjUkRk" data-title="Rolande - client review" aria-label="Play Rolande's review"><img src="https://i.ytimg.com/vi/2OeaMsjUkRk/maxresdefault.jpg" alt="Rolande - client review" loading="lazy"></a>
           <div class="bw-caption"><strong>Rolande</strong></div>
         </div>
         <div>
-          <div class="bw-video"><iframe src="https://www.youtube-nocookie.com/embed/uIeN-zUDi6I?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Joseph - client review" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          <a class="bw-video bw-yt" href="https://www.youtube.com/shorts/uIeN-zUDi6I" target="_blank" rel="noopener" data-yt="uIeN-zUDi6I" data-title="Joseph - client review" aria-label="Play Joseph's review"><img src="https://i.ytimg.com/vi/uIeN-zUDi6I/maxresdefault.jpg" alt="Joseph - client review" loading="lazy"></a>
           <div class="bw-caption"><strong>Joseph</strong></div>
         </div>
         <div>
-          <div class="bw-video"><iframe src="https://www.youtube-nocookie.com/embed/qi1RJk5eqOU?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Guy - client review" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          <a class="bw-video bw-yt" href="https://www.youtube.com/shorts/qi1RJk5eqOU" target="_blank" rel="noopener" data-yt="qi1RJk5eqOU" data-title="Guy - client review" aria-label="Play Guy's review"><img src="https://i.ytimg.com/vi/qi1RJk5eqOU/maxresdefault.jpg" alt="Guy - client review" loading="lazy"></a>
           <div class="bw-caption"><strong>Guy</strong></div>
         </div>
       </div>
@@ -432,6 +442,38 @@
 
 </div>
 
+<script>
+(function () {
+  if (window.bwYtReady) return;
+  window.bwYtReady = true;
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('a.bw-yt') : null;
+    if (!el) return;
+    if (el.classList.contains('is-playing')) return;
+    var id = el.getAttribute('data-yt');
+    if (!id) return;
+    e.preventDefault();
+    var others = document.querySelectorAll('.bw-yt.is-playing');
+    Array.prototype.forEach.call(others, function (p) {
+      p.innerHTML = p.__orig;
+      p.href = p.__href;
+      p.classList.remove('is-playing');
+    });
+    el.__orig = el.innerHTML;
+    el.__href = el.getAttribute('href');
+    var amp = String.fromCharCode(38);
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1' + amp + 'rel=0' + amp + 'modestbranding=1' + amp + 'playsinline=1';
+    f.title = el.getAttribute('data-title') || 'Video';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+    f.setAttribute('allowfullscreen', '');
+    el.removeAttribute('href');
+    el.innerHTML = '';
+    el.appendChild(f);
+    el.classList.add('is-playing');
+  });
+})();
+</script>
 
 </body>
 </html>
