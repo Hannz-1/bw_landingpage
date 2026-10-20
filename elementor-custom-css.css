@@ -133,6 +133,7 @@
 /* 6. Prepare video */
 .bwlp .bw-embed{position:relative;aspect-ratio:16/9;max-width:920px;margin:44px auto 0;border-radius:28px;overflow:hidden;background:#000;box-shadow:0 24px 60px rgba(0,0,0,.2)}
 .bwlp .bw-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.bwlp .bw-embed video{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;background:#000;display:block}
 .bwlp section h3.bw-subhead{font-size:clamp(24px,3vw,34px);margin:72px 0 0}
 
 /* 5 + 7. Client videos */
@@ -151,6 +152,7 @@
 .bwlp .bw-embed.bw-yt:after{margin:-13px 0 0 -8px;border-width:13px 0 13px 22px}
 .bwlp .bw-yt.is-playing:before,.bwlp .bw-yt.is-playing:after{display:none}
 .bwlp .bw-yt:focus-visible{outline:3px solid var(--bw-orange);outline-offset:3px}
+.bwlp .bw-yt video{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;background:#000;display:block}
 .bwlp .bw-caption{min-width:0;overflow-wrap:anywhere}
 
 .bwlp .bw-testi .bw-grid{align-items:start;gap:22px}
